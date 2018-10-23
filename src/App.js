@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
+
+import InputFormLayout from "./layouts/InputFormLayout.js"
+
 import './App.css';
+import "literallycanvas/lib/css/literallycanvas.css"
 
 const App = ({type, word}) => {
   return(
     <div className="App">
-      <div className="InputForm">
-        <div className="LeftContainer"> 
-          <h1>{ word }</h1>
-        </div>
-        <div className="CentralContainer"> 
-        </div>
-        <div className="RightContainer"> 
-        </div>
-      </div>
+       <InputFormLayout
+           word={word}
+           onSubmitClick={()=>{}}
+           onRefresh={()=>{}}
+       />
     </div>
   )
-}
+};
 
 
 export default App;
