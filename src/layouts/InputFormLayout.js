@@ -12,7 +12,7 @@ export default function InputFormLayout(props) {
             <WordPanel word={props.word}/>
         </div>
         <div className="central-container">
-            <Drawer/>
+            <Drawer reference = {props.reference}/>
         </div>
         <div className="right-container">
             <OptionsPanel
