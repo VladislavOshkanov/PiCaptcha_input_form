@@ -12,7 +12,19 @@ export default function InputFormLayout(props) {
             <WordPanel word={props.word}/>
         </div>
         <div className="central-container">
+            
             <Drawer reference = {props.reference}/>
+            
+            {
+                (props.type == 1) && <div>
+                    <h1>Accepted</h1>
+                </div>
+            }
+            {
+                (props.type == 2) && <div>
+                    <h1>Rejected</h1>
+                </div>
+            }
         </div>
         <div className="right-container">
             <OptionsPanel
