@@ -4,10 +4,10 @@ import {Button, ButtonToolbar} from "react-bootstrap"
 export default function OptionsPanel(props) {
     return <ButtonToolbar>
         <Button bsStyle="warning" onClick={props.onRefreshClick}>
-            Refresh word
+            Другое слово
         </Button>
         <Button bsStyle="success" onClick={props.onSubmitClick}>
-            Submit
+            Проверить
         </Button>
     </ButtonToolbar>
 }

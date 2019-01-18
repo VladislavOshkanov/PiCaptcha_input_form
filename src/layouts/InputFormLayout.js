@@ -17,12 +17,12 @@ export default function InputFormLayout(props) {
             
             {
                 (props.type == 1) && <div>
-                    <h1>Accepted</h1>
+                    <h1>Принято</h1>
                 </div>
             }
             {
                 (props.type == 2) && <div>
-                    <h1>Rejected</h1>
+                    <h1>Не принято</h1>
                 </div>
             }
         </div>
